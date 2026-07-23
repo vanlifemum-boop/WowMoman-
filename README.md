@@ -18,15 +18,24 @@ Alles ist reines HTML/CSS/JS — kein Baukasten nötig, läuft überall.
 3. Nach 1–2 Minuten ist die Seite online unter:
    `https://vanlifemum-boop.github.io/wowmoman-/`
 
-## 🔗 Eigene Domain verbinden (wenn du soweit bist)
-1. Domain kaufen (z. B. `wowmoman.de` bei IONOS, Strato, Namecheap … ca. 10–15 €/Jahr)
-2. In **Settings → Pages → Custom domain** die Domain eintragen
-3. Beim Domain-Anbieter diese DNS-Einträge setzen:
-   - `www` → **CNAME** → `vanlifemum-boop.github.io`
-   - Haupt-Domain (`@`) → **A-Records** → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-4. Häkchen bei **Enforce HTTPS** setzen — fertig! 🎉
+## 🔗 Eigene Domain verbinden — `wowmoman.de` (Status: in Arbeit)
 
-Sag Claude Bescheid, sobald du die Domain hast — dann wird alles gemeinsam eingerichtet und geprüft.
+Die `CNAME`-Datei mit `wowmoman.de` liegt bereits im Repo. Diese zwei Schritte
+kann nur die Kontoinhaberin selbst machen (GitHub gibt Repo-Settings nicht per
+Bot frei):
+
+1. **GitHub:** Settings → Pages → Custom domain → `wowmoman.de` eintragen → Save
+   (GitHub prüft automatisch gegen die vorhandene `CNAME`-Datei).
+2. **Beim Domain-Anbieter (checkdomain.de)** diese DNS-Einträge setzen:
+   - Haupt-Domain (`@` / wowmoman.de) → **A-Records** auf alle vier IPs:
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `www` → **CNAME** → `vanlifemum-boop.github.io`
+3. DNS-Propagation abwarten (meist Minuten, kann bis zu 24–48h dauern).
+4. Sobald GitHub das Zertifikat ausgestellt hat: Häkchen bei **Enforce HTTPS**
+   setzen — fertig! 🎉
+
+Prüfen kannst du die Propagation z. B. mit `dig wowmoman.de +short` oder auf
+dnschecker.org.
 
 ---
 *Einfach machen und weitersehen!*
