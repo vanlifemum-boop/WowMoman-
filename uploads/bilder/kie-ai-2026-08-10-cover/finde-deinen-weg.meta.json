@@ -1,0 +1,11 @@
+[
+  {
+    "zeit": "2026-08-10T16:05:27",
+    "datei": "01.png",
+    "typ": "bild",
+    "modell": "gpt-image-2-text-to-image",
+    "prompt": "Ein leuchtender Kompass schwebt ueber einer Landkarte, die vollstaendig aus feinen Lichtlinien besteht; von der Kompassmitte verzweigen sich mehrere Wege nach vorn, einer davon hell hervorgehoben. Edel, cinematisch, moderne Markenillustration in tiefem Aubergine (#2a1030), Violett (#7b3fa0) und leuchtendem Magenta (#e0479a), weiches Gegenlicht, feiner Lichtstaub, viel Tiefe. Absolut kein Text, keine Buchstaben, keine Zahlen, keine Logos, keine erkennbaren Gesichter.",
+    "credits": 6.0,
+    "eur": 0.0258
+  }
+]

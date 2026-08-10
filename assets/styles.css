@@ -164,6 +164,19 @@ section { padding: 92px 0; }
   color: rgba(255,255,255,.5); font-size: .85rem; text-align: center; padding: 20px;
   box-shadow: var(--shadow);
 }
+/* Buchcover: Bild aus kie.ai plus Titel als echter HTML-Text darueber.
+   Bewusst nicht ins Bild generiert — Bildmodelle verstuemmeln deutsche
+   Titel, und so bleibt die Schrift scharf und aenderbar. */
+.book-cover { display: block; padding: 0; position: relative; overflow: hidden; }
+.book-cover img { width: 100%; height: 100%; object-fit: cover; }
+.book-cover figcaption {
+  position: absolute; top: 0; left: 0; right: 0;
+  padding: 24px 22px 40px;
+  background: linear-gradient(180deg, rgba(42,16,48,.88) 0%, rgba(42,16,48,.55) 65%, rgba(42,16,48,0) 100%);
+  display: flex; flex-direction: column; gap: 8px; text-align: center;
+}
+.book-cover .reihe { font-size: .66rem; text-transform: uppercase; letter-spacing: .2em; font-weight: 700; color: var(--gold-400); }
+.book-cover .titel { font-family: var(--font-head); font-size: clamp(1.3rem, 2.4vw, 1.75rem); line-height: 1.15; color: var(--white); }
 .story blockquote { border-left: 3px solid var(--gold-500); margin: 22px 0; padding-left: 20px; font-style: italic; color: var(--teal-700); }
 @media (max-width: 780px) { .story-grid { grid-template-columns: 1fr; } }
 
@@ -218,7 +231,10 @@ section { padding: 92px 0; }
   background: var(--white); border-radius: var(--radius); overflow: hidden;
   box-shadow: var(--shadow); display: flex; flex-direction: column;
 }
-.product .thumb { aspect-ratio: 16/10; background: linear-gradient(140deg, var(--teal-500), var(--teal-800)); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.55); font-size: .85rem; }
+.product .thumb { aspect-ratio: 16/10; background: linear-gradient(140deg, var(--teal-500), var(--teal-800)); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.55); font-size: .85rem; overflow: hidden; }
+/* Das Coverbild fuellt die Kachel randlos; der Verlauf darunter traegt,
+   solange das Bild noch laedt. */
+.product .thumb img { width: 100%; height: 100%; object-fit: cover; }
 .product .body { padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .product .tier { font-size: .72rem; text-transform: uppercase; letter-spacing: .16em; font-weight: 700; color: var(--gold-500); }
 .product h3 { margin: 0; font-size: 1.25rem; }

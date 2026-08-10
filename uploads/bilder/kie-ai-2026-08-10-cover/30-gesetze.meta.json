@@ -1,0 +1,11 @@
+[
+  {
+    "zeit": "2026-08-10T16:04:10",
+    "datei": "01.png",
+    "typ": "bild",
+    "modell": "gpt-image-2-text-to-image",
+    "prompt": "Ein aufgeschlagenes Workbook schwebt frei; darueber ordnen sich viele gleichmaessige Lichtpunkte zu einem ruhigen Raster wie ein Kalender, das sich nach hinten in Tiefe aufloest. Diszipliniert, klar. Edel, cinematisch, moderne Markenillustration in tiefem Aubergine (#2a1030), Violett (#7b3fa0) und leuchtendem Magenta (#e0479a), weiches Gegenlicht, feiner Lichtstaub, viel Tiefe. Absolut kein Text, keine Buchstaben, keine Zahlen, keine Logos, keine erkennbaren Gesichter.",
+    "credits": 6.0,
+    "eur": 0.0258
+  }
+]

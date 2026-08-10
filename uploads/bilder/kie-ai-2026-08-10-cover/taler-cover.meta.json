@@ -1,0 +1,11 @@
+[
+  {
+    "zeit": "2026-08-10T16:16:16",
+    "datei": "01.png",
+    "typ": "bild",
+    "modell": "gpt-image-2-text-to-image",
+    "prompt": "Hochformatiges Kinderbuchcover: ein glaenzender schwarzer Rabe mit einer goldenen Muenze im Schnabel sitzt mittig auf einer alten Holztruhe, aus der warmes Goldlicht quillt; unten die weiche Silhouette eines Maedchens von hinten. Das obere Drittel bleibt ruhig und gleichmaessig dunkel, damit dort spaeter ein Titel platziert werden kann. Warme, kindgerechte Buchillustration in Gold, Bernstein und weichem Violett, freundlich und einladend, maerchenhaftes Licht. Absolut kein Text, keine Buchstaben, keine Zahlen, keine Logos.",
+    "credits": 6.0,
+    "eur": 0.0258
+  }
+]
