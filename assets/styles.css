@@ -110,22 +110,28 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.15; font-weight: 700;
   color: var(--white);
   overflow: hidden;
 }
-/* Platzhalter-Hintergrund: wird später durch Higgsfield-Frame-Sequenz ersetzt.
-   #hero-media ist die Andockstelle für das scroll-cinematic Canvas. */
+/* Hero-Hintergrund: Phoenix-Bild rechts, links dunkel ausgeblendet, damit der
+   Text darauf lesbar bleibt. Der Verlauf liegt IM background-Stapel ueber dem
+   Bild, der Farbverlauf darunter traegt, falls das Bild noch nicht geladen ist.
+   #hero-media bleibt die Andockstelle fuer das scroll-cinematic Canvas. */
 .hero-media {
   position: absolute; inset: 0; z-index: 0;
   background:
-    radial-gradient(1200px 600px at 70% 20%, rgba(224,71,154,.25), transparent 60%),
+    linear-gradient(90deg, rgba(42,16,48,.93) 0%, rgba(42,16,48,.84) 42%, rgba(42,16,48,.42) 68%, rgba(42,16,48,.05) 100%),
+    url("img/hero-phoenix.jpg") center right / cover no-repeat,
     linear-gradient(135deg, var(--teal-900), var(--teal-700) 55%, var(--teal-800));
 }
-.hero-media::after {
-  content: "🎬 Platzhalter — hier kommt spaeter das Higgsfield-Kino-Video";
-  position: absolute; bottom: 16px; right: 18px;
-  font-size: .72rem; color: rgba(255,255,255,.45);
-  font-family: var(--font-body); letter-spacing: .04em;
-}
 .hero-media canvas { width: 100%; height: 100%; display: block; object-fit: cover; }
-.hero-media.has-ballpit::after { content: none; }
+/* Schmale Schirme: der Text liegt zwangslaeufig ueber dem Motiv, deshalb ein
+   gleichmaessig dunklerer Schleier statt des seitlichen Verlaufs. */
+@media (max-width: 780px) {
+  .hero-media {
+    background:
+      linear-gradient(180deg, rgba(42,16,48,.88) 0%, rgba(42,16,48,.72) 42%, rgba(42,16,48,.45) 100%),
+      url("img/hero-phoenix.jpg") 74% center / cover no-repeat,
+      linear-gradient(135deg, var(--teal-900), var(--teal-700) 55%, var(--teal-800));
+  }
+}
 /* Schwebende Kugel-Ebene ueber der ganzen Seite (unter der Nav) */
 #ballpit-layer canvas { width: 100%; height: 100%; display: block; }
 /* Lesbarkeits-Overlay ueber den Kugeln, unter dem Text */

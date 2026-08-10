@@ -1,0 +1,20 @@
+[
+  {
+    "zeit": "2026-08-10T09:16:55",
+    "datei": "01.png",
+    "typ": "bild",
+    "modell": "gpt-image-2-text-to-image",
+    "prompt": "Minimalistisches App-Icon, Monogramm-W Magenta auf Aubergine-Verlauf, favicon",
+    "credits": 6.0,
+    "eur": 0.0258
+  },
+  {
+    "zeit": "2026-08-10T09:18:23",
+    "datei": "02.png",
+    "typ": "bild",
+    "modell": "gpt-image-2-text-to-image",
+    "prompt": "Cinematisches, edles Querformat-Hintergrundbild in tiefem Aubergine und Violett (#2a1030, #532057, #7b3fa0) mit leuchtenden Magenta-Akzenten (#e0479a). Rechts im Bild ein stilisierter, aufsteigender Phoenix aus Licht und Funken, dessen Schwingen sich nach oben oeffnen; die Funken ziehen als weicher Lichtstaub nach oben rechts. Die linke Bildhaelfte bleibt ruhig, dunkel und fast leer, damit heller Text darauf lesbar bleibt. Weiches Gegenlicht, feiner Nebel, filmische Farbtiefe, abstrakt und elegant, keine Personen, kein Gesicht, kein Text, keine Buchstaben, keine Logos.",
+    "credits": 6.0,
+    "eur": 0.0258
+  }
+]
