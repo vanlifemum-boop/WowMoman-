@@ -1,0 +1,8 @@
+{
+  "datei": "01.png",
+  "modell": "gpt-image-2-text-to-image",
+  "seitenverhaeltnis": "3:2",
+  "prompt": "Ein heller Kuechentisch am Morgen: ein aufgeschlagener einfacher Notizblock mit einer handschriftlichen Liste, ein Kugelschreiber, eine Tasse Kaffee und ein aelterer, guenstiger Laptop. Bescheiden und echt, der Anfang mit dem, was da ist. Fotorealistisch wie eine echte Aufnahme, natuerliches Tageslicht, gedeckte natuerliche Farben, aufgeraeumt und sachlich, geringe Schaerfentiefe. Ausdruecklich KEIN Leuchten, keine Lichtpartikel, keine Funken, kein Nebel, keine Magie, keine Neonfarben, keine Illustration. Kein Text, keine Buchstaben, keine Logos.",
+  "credits": 6.0,
+  "eur": 0.0258
+}
